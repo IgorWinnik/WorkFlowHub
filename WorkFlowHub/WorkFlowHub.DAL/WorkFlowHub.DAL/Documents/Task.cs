@@ -22,9 +22,11 @@ namespace WorkFlowHub.DAL.Documents
 
         public string Status { get; set; }
 
-        public IEnumerable<PeriodicReport> PeriodicReports { get; set; } = Enumerable.Empty<PeriodicReport>();
+        public IEnumerable<PeriodicReport?> PeriodicReports { get; set; } = Enumerable.Empty<PeriodicReport>();
 
-        public IEnumerable<Comment> Comments { get; set; } = Enumerable.Empty<Comment>();
+        public IEnumerable<Comment?> Comments { get; set; } = Enumerable.Empty<Comment>();
+
+        public IEnumerable<Task?> Tasks { get; set; }
     }
 
     public class PeriodicReport
@@ -32,6 +34,12 @@ namespace WorkFlowHub.DAL.Documents
         public DateTime Created { get; set; }
 
         public string Descriprion { get; set; }
+
+        public string Status { get; set; }
+
+        public DateTime Start { get; set; }
+
+        public DateTime End { get; set; }
     }
 
     public class Comment
@@ -45,5 +53,7 @@ namespace WorkFlowHub.DAL.Documents
         public string Type { get; set; }
 
         public string Description { get; set;  }
+
+        public DateTime Created { get; set; }
     }
 }
