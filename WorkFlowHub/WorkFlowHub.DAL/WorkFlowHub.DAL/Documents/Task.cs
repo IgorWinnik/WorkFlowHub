@@ -46,8 +46,6 @@ namespace WorkFlowHub.DAL.Documents
     {
         public string Name { get; set; }
 
-        public string Surname { get; set; }
-
         public string ImageUrl { get; set; }
 
         public string Type { get; set; }
