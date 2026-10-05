@@ -35,5 +35,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WorkFlowHub.DAL\WorkFlowHub.DAL\WorkFlowHub.DAL.csproj">
+      <Project>{6c9ea4fb-2b76-0c35-893a-681bdf919412}</Project>
+      <Name>WorkFlowHub.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
