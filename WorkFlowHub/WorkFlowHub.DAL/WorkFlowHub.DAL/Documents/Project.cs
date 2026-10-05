@@ -4,11 +4,9 @@ using System.Text;
 
 namespace WorkFlowHub.DAL.Documents
 {
-    public class Sprint
+    public class Project
     {
         public Guid Id { get; set; }
-
-        public Guid ProjectId { get; set; }
 
         public required string Name { get; set; }
 
@@ -16,9 +14,7 @@ namespace WorkFlowHub.DAL.Documents
 
         public DateTime CreatedAt { get; set; }
 
-        public DateTime StartAt {  get; set; }
-
-        public DateTime FinishedAt { get; set; }
+        public DateTime? FinishedAt { get; set; }
 
         public required string Status { get; set; }
     }
