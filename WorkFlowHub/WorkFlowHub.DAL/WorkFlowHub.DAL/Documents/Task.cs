@@ -12,17 +12,17 @@ namespace WorkFlowHub.DAL.Documents
 
         public Guid SprintId { get; set; }
 
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public DateTime Created { get; set; }
 
-        public string Priority { get; set; }
+        public required string Priority { get; set; }
 
-        public string Type { get; set; }
+        public required string Type { get; set; }
 
-        public string Status { get; set; }
+        public required string Status { get; set; }
 
         public IEnumerable<PeriodicReport?> PeriodicReports { get; set; } = Enumerable.Empty<PeriodicReport>();
 
@@ -35,9 +35,9 @@ namespace WorkFlowHub.DAL.Documents
     {
         public DateTime Created { get; set; }
 
-        public string Descriprion { get; set; }
+        public string? Descriprion { get; set; }
 
-        public string Status { get; set; }
+        public required string Status { get; set; }
 
         public DateTime Start { get; set; }
 
@@ -50,9 +50,9 @@ namespace WorkFlowHub.DAL.Documents
     {
         public Guid UserId { get; set; }
 
-        public string Type { get; set; }
+        public required string Type { get; set; }
 
-        public string Description { get; set;  }
+        public required string Description { get; set; }
 
         public DateTime Created { get; set; }
     }
