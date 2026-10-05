@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+	<Project Path="WorkFlowHub/WorkFlowHub.API/WorkFlowHub.API/WorkFlowHub.API.csproj" />
+	<Project Path="WorkFlowHub/WorkFlowHub.BLL/WorkFlowHub.BLL/WorkFlowHub.BLL.csproj" Id="da3772bc-1fd1-417c-bed8-684d864826b4" />
+	<Project Path="WorkFlowHub/WorkFlowHub.DAL/WorkFlowHub.DAL/WorkFlowHub.DAL.csproj" />
+</Solution>

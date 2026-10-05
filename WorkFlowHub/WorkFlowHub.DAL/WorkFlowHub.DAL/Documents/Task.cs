@@ -8,7 +8,9 @@ namespace WorkFlowHub.DAL.Documents
 {
     public class Task
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
+
+        public Guid SprintId { get; set; }
 
         public string Name { get; set; }
 
@@ -40,13 +42,13 @@ namespace WorkFlowHub.DAL.Documents
         public DateTime Start { get; set; }
 
         public DateTime End { get; set; }
+
+        public Guid UserId { get; set; }
     }
 
     public class Comment
     {
-        public string Name { get; set; }
-
-        public string ImageUrl { get; set; }
+        public Guid UserId { get; set; }
 
         public string Type { get; set; }
 
